@@ -6,3 +6,6 @@
 
 Сервер доступен:
 `http://localhost:8080`.
+
+
+всё было взято отсюда: https://oliverbenns.itch.io/sunset-selfies
