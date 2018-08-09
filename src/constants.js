@@ -1,0 +1,47 @@
+export const PALETTE = {
+  PRIMARY: '#ff00be',
+  SECONDARY: '#FF00FF',
+  HIGHLIGHT: '#FFF',
+  SHADOW: '#372AAF',
+};
+
+export const IMAGES = {
+  BUTTON: 'BUTTON',
+  SUNSET: 'SUNSET',
+  GRADIENT: 'GRADIENT',
+  PLAYER: 'PLAYER',
+  PIZZA: 'PIZZA',
+  BURGER: 'BURGER',
+  FLOOR: 'FLOOR',
+  LIFE: 'LIFE',
+  LIFE2: 'LIFE2',
+  TITLE: 'TITLE',
+  EGGPLANT: 'EGGPLANT',
+  PLAYER1: 'PLAYER1'
+};
+
+export const SFX = {
+  BITE: 'BITE',
+  SHUTTER: 'SHUTTER',
+  TWINKLE: 'TWINKLE',
+  TRUMPET: 'TRUMPET',
+  SOUNDTRACK: 'SOUNDTRACK',
+};
+
+export const STATES = {
+  BOOT: 'BOOT',
+  TITLE: 'TITLE',
+  MAIN: 'MAIN',
+  MAIN2: 'MAIN2',
+  CHOOSE: 'CHOOSE',
+  END: 'END',
+  END2: 'END2',
+  PRELOAD: 'PRELOAD',
+  CHICK: 'CHICK',
+  BIBLE: 'BIBLE'
+};
+
+export const CANVAS = {
+  WIDTH: 600,
+  HEIGHT: 600,
+};
