@@ -67,7 +67,7 @@ export default class Main extends Phaser.State {
       score.lives += food.healthy ? this.endGame() : + 1;
       score.counter += food.healthy ? + 0 : + 1;
       if (score.lives >= 10 ) {
-        this.game.time.events.repeat(Phaser.Timer.SECOND * 0.5, Infinity, this.createFood, this);
+        this.game.time.events.repeat(Phaser.Timer.SECOND * 1.5, Infinity, this.createFood, this);
       } 
 
       this.game.sound.play(food.healthy ? SFX.TRUMPET : SFX.BITE);

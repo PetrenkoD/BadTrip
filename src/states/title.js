@@ -28,6 +28,6 @@ export default class Title extends Phaser.State {
   }
 
   handleClick() {
-    this.game.state.start(STATES.CHOOSE);
+    this.game.state.start(STATES.MAIN);
   }
 }

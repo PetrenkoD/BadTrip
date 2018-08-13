@@ -38,6 +38,6 @@ export default class End extends Phaser.State {
     this.game.state.start(STATES.MAIN);
   }
   handleClicks() {
-    this.game.state.start(STATES.CHOOSE);
+    this.game.state.start(STATES.MAIN);
   }
 }
