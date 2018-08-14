@@ -1,21 +1,21 @@
 import { IMAGES } from 'constants';
 
-export default class Food extends Phaser.Sprite {
+export default class Food50 extends Phaser.Sprite {
   constructor(game) {
-    const randomNumber = game.rnd.between(0, 3);
-    const healthy = randomNumber === 3;
-    
-    const sprite = healthy ? IMAGES.EGGPLANT : randomNumber % 2 === 0 ? IMAGES.PIZZA : IMAGES.BURGER;
-    
-    const image = game.cache.getImage(sprite);
-  
+    const randomNumber = game.rnd.between(0, 30);
+    const healthy50 = randomNumber === 30;
+    const sprite50 = healthy50 ? IMAGES.PIR7 : randomNumber % 2 === 0 ? IMAGES.PIR6 : IMAGES.PIR5;
+    const image = game.cache.getImage(sprite50);
+
     const x = game.rnd.between(100, 900)
     const y = -image.height
 
-    super(game, x, y, sprite);
-    this.healthy = healthy;
+    super(game, x, y, sprite50);
+    this.healthy50 = healthy50;
     game.physics.arcade.enable(this);
+
     this.body.gravity.y = 70; //скорость падения
+    
     if (game.score.lives >= 100 ) {
       this.body.gravity.y = 120;
     }

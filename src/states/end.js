@@ -1,7 +1,9 @@
 import { ASSETS, IMAGES, PALETTE, STATES } from 'constants';
 
-import Button from 'objects/button';
-import Button2 from 'objects/button2';
+// import Button from 'objects/button';
+import Buttonzan from 'objects/button2';
+import Background from 'objects/background';
+import BYE from 'objects/bye';
 // import Heading from 'objects/heading';
 // import Instructions from 'objects/instructions';
 
@@ -9,26 +11,30 @@ export default class End extends Phaser.State {
   constructor() {
     super();
     this.handleClick = this.handleClick.bind(this);
-    this.handleClicks = this.handleClicks.bind(this);
+    // this.handleClicks = this.handleClicks.bind(this);
   }
 
   create() {
-    const { game } = this;
-    const textmenu = new Phaser.Text(game, game.world.centerX, game.world.centerY - 75, `Вы можете выбрать другого персонажа`.toUpperCase(), { font: '18px Pixeled', fill: PALETTE.SECONDARY });
-    textmenu.anchor.setTo(0.5, 0.5);
-    const textgame = new Phaser.Text(game, game.world.centerX, game.world.centerY + 215, `Начать заново`.toUpperCase(), { font: '18px Pixeled', fill: PALETTE.SECONDARY });
-    textgame.anchor.setTo(0.5, 0.5);
 
-    const text = new Phaser.Text(game, game.world.centerX, game.world.centerY - 200, `Вы набрали ${game.score.counter}`.toUpperCase(), { font: '30px Pixeled', fill: PALETTE.SHADOW });
+    const { game } = this;
+    const background = new Background(game);
+    game.add.existing(background);
+
+
+    const bye = new BYE(game);
+  
+
+    const text = new Phaser.Text(game, game.world.centerX - 7, game.world.centerY + 40 , `Вы набрали ${game.score.counter}`.toUpperCase(), { font: '30px Pixeled', fill: PALETTE.SHADOW });
     text.anchor.setTo(0.5, 0.5);
+
+    // const text2 = new Phaser.Text(game, game.world.centerX - 7, game.world.centerY + 50 , `Теперь ты можешь начать`, { font: '20px Pixeled', fill: PALETTE.HIGHLIGHT });
+    // text.anchor.setTo(0.5, 0.5);
 
     const objects = [
       text,
-      textmenu,
-      textgame,
-      new Button(game, this.handleClick),
-
-      new Button2(game, this.handleClicks )
+      // text2,
+      new Buttonzan(game, this.handleClick),
+      bye
     ];
 
     objects.forEach(game.add.existing, this);
@@ -37,7 +43,7 @@ export default class End extends Phaser.State {
   handleClick() {
     this.game.state.start(STATES.MAIN);
   }
-  handleClicks() {
-    this.game.state.start(STATES.MAIN);
-  }
+  // handleClicks() {
+  //   this.game.state.start(STATES.MAIN);
+  // }
 }

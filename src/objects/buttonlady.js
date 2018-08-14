@@ -1,6 +1,6 @@
 import { IMAGES, PALETTE, SFX } from 'constants';
 
-export default class Buttonzan extends Phaser.Button {
+export default class Buttonlady extends Phaser.Button {
   constructor(game, onClick) {
     const { world } = game;
 
@@ -9,7 +9,7 @@ export default class Buttonzan extends Phaser.Button {
       onClick();
     };
 
-    super(game, world.centerX, game.height - 200, IMAGES.ZAN, fn, null, 1, 0);
+    super(game, world.centerX + 300, game.height - 100, IMAGES.PLAY, fn, null, 1, 0);
     this.anchor.setTo(0.5, 0);
   }
 }

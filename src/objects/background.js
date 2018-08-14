@@ -2,7 +2,7 @@ import { CANVAS, IMAGES } from 'constants';
 
 export default class Background extends Phaser.Image {
   constructor(game) {
-    super(game, 0, 100, IMAGES.SUNSET);
+    super(game, 0, 0, IMAGES.SUNSET);
 
     // const scale = CANVAS.WIDTH / this.width;
 

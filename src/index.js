@@ -6,7 +6,7 @@ import { CANVAS, STATES } from 'constants';
 
 import Boot from 'states/boot';
 import Preload from 'states/preload';
-// import Choose from 'states/choose';
+import Choose from 'states/choose';
 import Main from 'states/main';
 // import Main2 from 'states/main2';
 import End from 'states/end';
@@ -35,7 +35,7 @@ game.score = score;
 game.state.add(STATES.BOOT, Boot);
 game.state.add(STATES.PRELOAD, Preload);
 game.state.add(STATES.TITLE, Title);
-// game.state.add(STATES.CHOOSE, Choose);
+game.state.add(STATES.CHOOSE, Choose);
 // game.state.add(STATES.CHICK, Chick);
 game.state.add(STATES.BIBLE, Bible);
 game.state.add(STATES.MAIN, Main);

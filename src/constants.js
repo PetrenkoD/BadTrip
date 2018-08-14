@@ -1,8 +1,8 @@
 export const PALETTE = {
   PRIMARY: '#ff00be',
   SECONDARY: '#FF00FF',
-  HIGHLIGHT: '#FFF',
-  SHADOW: '#372AAF',
+  HIGHLIGHT: '#000000',
+  SHADOW: '#ff0058',
 };
 
 export const IMAGES = {
@@ -17,7 +17,21 @@ export const IMAGES = {
   LIFE2: 'LIFE2',
   TITLE: 'TITLE',
   EGGPLANT: 'EGGPLANT',
-  PLAYER1: 'PLAYER1'
+  PLAYER1: 'PLAYER1',
+  PLAY: 'PLAY',
+  LOGO: 'LOGO',
+  BYE: 'BYE',
+  ZAN: 'ZAN',
+  PIR5: 'PIR5',
+  PIR6: 'PIR6',
+  PIR7: 'PIR7',
+  LEFTMENU: 'LEFTMENU',
+  LADYMOUTH: 'LADYMOUTH',
+  LOGOLADY: 'LOGOLADY',
+  LOVI: 'LOVI',
+  NELOVI: 'NELOVI',
+  SMETR: 'SMETR',
+  NOO: 'NOO'
 };
 
 export const SFX = {
@@ -42,6 +56,6 @@ export const STATES = {
 };
 
 export const CANVAS = {
-  WIDTH: 600,
+  WIDTH: 1000,
   HEIGHT: 600,
 };

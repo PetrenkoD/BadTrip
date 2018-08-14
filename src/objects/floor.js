@@ -1,6 +1,6 @@
 import { IMAGES } from 'constants';
 
-const walkingVelocity = 300;
+const walkingVelocity = 800;
 
 export default class Floor extends Phaser.Sprite {
   constructor(game) {

@@ -9,7 +9,7 @@ export default class Button extends Phaser.Button {
       onClick();
     };
 
-    super(game, world.centerX, game.height - 150, IMAGES.BUTTON, fn, null, 1, 1, 0);
+    super(game, world.centerX, game.height - 200, IMAGES.PLAY, fn, null, 1, 0);
     this.anchor.setTo(0.5, 0);
   }
 }
