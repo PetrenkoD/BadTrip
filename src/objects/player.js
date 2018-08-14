@@ -15,6 +15,9 @@ export default class Player extends Phaser.Sprite {
 
     this.anchor.setTo(0.5, 0.5);
 
+    this.animations.add('left', [0,1,2,3,4,5], 30);
+    this.animations.add('right', [0,1,2,3,4,5], 30);
+
     this.body.gravity.y = 2000;
     this.body.collideWorldBounds = true;
 
@@ -35,6 +38,7 @@ export default class Player extends Phaser.Sprite {
     }
     if (left.isDown) {
       this.body.velocity.x = -(walkingVelocity);
+      this.play('left');
       // this.animations.play('left');
       // this.animations.add('walk', [0, 1, 2, 3, 4, 5], 10);
       this.scale.x = 1;
@@ -42,6 +46,7 @@ export default class Player extends Phaser.Sprite {
     }
     if (right.isDown) {
       this.body.velocity.x = walkingVelocity;
+      this.play('right');
       // this.body.add('walk', [0, 1, 2, 3, 4, 5], 10);
       // this.animations.play('right');
       this.scale.x = -1;

@@ -26,7 +26,8 @@ export default class Boot extends Phaser.State {
     load.spritesheet(IMAGES.PIR5, 'assets/img/7.png', 30, 28);
     load.spritesheet(IMAGES.PIR6, 'assets/img/8.png', 30, 41);
     load.spritesheet(IMAGES.PIR7, 'assets/img/10.png', 30, 46);
-    load.spritesheet(IMAGES.PLAYER, 'assets/img/player.png', 90, 111);
+    load.spritesheet(IMAGES.PLAYER, 'assets/img/player66.png', 90, 90);
+    // load.spritesheet(IMAGES.PLAYER, 'assets/img/player.png', 90, 111);
     load.spritesheet(IMAGES.PLAYER1, 'assets/img/player2.png', 200, 200);
     load.spritesheet(IMAGES.PIZZA, 'assets/img/3.png', 30, 40);
     load.spritesheet(IMAGES.EGGPLANT, 'assets/img/11.png', 30, 26);
